@@ -9,6 +9,11 @@ import javafx.scene.control.*;
 
 public class ClickMeCounter extends Application {
 
+    /**
+     * main method to start the program. Method calls
+     * launch(args) to start the javafx program.
+     * @param args
+     */
     public static void main(String[] args){
         launch(args);
     }
@@ -41,12 +46,19 @@ public class ClickMeCounter extends Application {
         primaryStage.show();
     }
 
+    /**
+     * Increases the counter total value by one and sets
+     * a text value based on the counter total.
+     */
     private void buttonClick(){
         clickCounter++;
         String message = clickCounter > 1 ? Constants.MORE_THAN_ONE_FIRST + clickCounter + Constants.MORE_THAN_ONE_LAST : Constants.ONE_CLICK;
         lbl.setText(message);
     }
 
+    /**
+     * Quits the program
+     */
     private void quit(){
         System.exit(0);
     }
