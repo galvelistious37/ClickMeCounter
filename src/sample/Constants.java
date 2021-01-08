@@ -1,6 +1,7 @@
 package sample;
 
-public class Constants{
+class Constants{
+    static final String QUIT = "Quit";
     static final int ZERO = 0;
     static final String CLICK_ME = "Click Me!";
     static final String NO_CLICKS = "You have not clicked the button yet";
